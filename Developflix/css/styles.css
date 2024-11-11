@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.genero-container {
+  margin-bottom: 40px;
+}
+
+.genero-container h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+.genero {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pelicula {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Ancho de la tarjeta */
+  text-align: center;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pelicula img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid #eee;
+}
+
+.pelicula h3 {
+  font-size: 1.2em;
+  margin: 15px;
+  color: #333;
+  font-weight: bold;
+}
+
+.pelicula:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+.genero-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.genero-container h2 {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .genero {
+    justify-content: space-around; 
+  }
+
+  .pelicula {
+    width: 250px; 
+  }
+}
+
